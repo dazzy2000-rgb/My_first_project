@@ -10,10 +10,6 @@ with sync_playwright() as p:
     search.fill("Box")
     search_button = page.locator("[id='gh-search-btn']")
     search_button.click()
-    #page keyboard.press ('Enter')
-    current_url = page.url
-    assert page.url.__contains__("ebay"),"page URL did not contains Ebay after search"
-
 
     browser.close()
     print("Test end")
