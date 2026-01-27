@@ -1,3 +1,5 @@
+import time
+
 from playwright.sync_api import sync_playwright
 
 with sync_playwright() as playwright:
@@ -8,9 +10,11 @@ with sync_playwright() as playwright:
     user_name.fill("standard_user")
     password = page.locator("[id='password']")
     password.fill("secret_sauce")
-    login_button = page.locator("[id='login-button']")
+    login_button = page.locator("[name='login-button']")
     login_button.click()
-
+    prices=page.locator("[class='inventory_item_price']")
+    print(prices[0].)
+    time.sleep(3)
     url= page.url
     print(f"url:{url}")
     page.close()
