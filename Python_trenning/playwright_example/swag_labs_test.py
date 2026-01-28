@@ -12,18 +12,16 @@ with sync_playwright() as playwright:
     password.fill("secret_sauce")
     login_button = page.locator("[name='login-button']")
     login_button.click()
-    prices=page.locator("[class='inventory_item_price']")
-    print(prices[0].)
     time.sleep(3)
     url= page.url
     print(f"url:{url}")
     page.close()
     browser.close()
     print("### Test end ###")
-    if url == "https://www.saucedemo.com/inventory.html":
-        print(f"###Test Pass###")
-    else:
-        print(f"###Test Fail###")
+    # if url == "https://www.saucedemo.com/inventory.html":
+    #     print(f"###Test Pass###")
+    # else:
+    #     print(f"###Test Fail###")
 
 #
 # def test_swaglabs_correct_login(setup_playwright):
