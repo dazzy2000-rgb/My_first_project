@@ -1,7 +1,7 @@
 import unittest
 
 
-class TestPytestExample(unittest.TestCase):
+class TestPytestExample ():
 
     def test_summery(self):
         print("test_summery")
