@@ -17,7 +17,7 @@ class TestSwagLabsTest ():
         url = page.url
         assert url == "https://www.saucedemo.com/inventory.html","Page URL is not expected after Login"
 
-    def test_login(self, setup_playwright):
+    def test_incorrect_login(self, setup_playwright):
         print("test_login")
         page = setup_playwright
         page.goto("https://www.saucedemo.com/")
