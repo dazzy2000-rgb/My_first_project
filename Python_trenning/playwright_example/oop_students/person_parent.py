@@ -1,5 +1,5 @@
 
-class age_parametr():
+class personparent():
     def age_parametr(self,age):
         if age > 18:
             print(f"Student is {age} years old")
