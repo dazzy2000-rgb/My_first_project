@@ -1,8 +1,6 @@
-import time
-
-from PythonProject.Python_trenning.nike_project.nike_pages.nike_card_page import NikeCardPage
-from PythonProject.Python_trenning.nike_project.nike_pages.nike_homepage import Homepage
-from PythonProject.Python_trenning.nike_project.nike_pages.nike_search_result_page import SearchResultsPage
+from PythonProject.Python_trenning.nike_project_1.nike_pages.nike_card_page import NikeCardPage
+from PythonProject.Python_trenning.nike_project_1.nike_pages.nike_homepage import Homepage
+from PythonProject.Python_trenning.nike_project_1.nike_pages.nike_search_result_page import SearchResultsPage
 
 
 class TestNikeTest():
